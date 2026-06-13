@@ -1,0 +1,49 @@
+.page-container {
+  display: flex;
+  min-height: 100vh; /* viewport height */
+}
+
+.left-side {
+  flex: 1;
+  background-image: url('./background.png');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-overlay img {
+  width: 100px;
+  height: auto; /* keeps aspect ratio */
+}
+
+.right-side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro, .footer-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  flex: 1;
+}
+
+.form-section {
+  background-color: white;
+  padding: 40px;
+  flex-grow: 1; /* takes remaining vertical space */
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
